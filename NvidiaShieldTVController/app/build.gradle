@@ -13,8 +13,8 @@ android {
         versionCode 1
         versionName "1.0"
 
-        buildConfigField "String", "TV_IP_ADDRESS", "\"192.168.1.20\""
-        buildConfigField "int", "TV_PORT", "9761"
+        buildConfigField "String", "TV_IP_ADDRESS", "\"192.168.10.16\""
+        buildConfigField "int", "TV_PORT", "55000"
         // whether to log keypresses to logcat for mapping new controller buttons
         buildConfigField "boolean", "LOG_INPUT_KEYCODES", "false"
     }
@@ -37,7 +37,7 @@ android {
                     appPrefix: "shield",
                     launcherName: "Shield TV Control",
             ]
-            buildConfigField "String", "SELECT_INPUT_PARAMS", "\"hdmi1\""
+            buildConfigField "String", "SELECT_INPUT_PARAMS", "\"hdmi4\""
             buildConfigField "boolean", "IS_SHIELD", "true"
         }
         playstation {
@@ -48,7 +48,7 @@ android {
                     appPrefix: "playstation",
                     launcherName: "Playstation 4",
             ]
-            buildConfigField "String", "SELECT_INPUT_PARAMS", "\"hdmi2\""
+            buildConfigField "String", "SELECT_INPUT_PARAMS", "\"\""
             buildConfigField "boolean", "IS_SHIELD", "false"
         }
         nintendo_switch {
@@ -59,7 +59,7 @@ android {
                     appPrefix: "switch",
                     launcherName: "Nintendo Switch",
             ]
-            buildConfigField "String", "SELECT_INPUT_PARAMS", "\"hdmi3\""
+            buildConfigField "String", "SELECT_INPUT_PARAMS", "\"\""
             buildConfigField "boolean", "IS_SHIELD", "false"
         }
         xbox {
@@ -70,7 +70,7 @@ android {
                     appPrefix: "xbox",
                     launcherName: "Xbox One",
             ]
-            buildConfigField "String", "SELECT_INPUT_PARAMS", "\"\""
+            buildConfigField "String", "SELECT_INPUT_PARAMS", "\"hdmi2\""
             buildConfigField "boolean", "IS_SHIELD", "false"
         }
     }
