@@ -18,8 +18,8 @@ import java.util.concurrent.Executors
  */
 
 enum class TvCommand(private val commandValue: String) {
-    POWER_OFF("POWER off"),
-    SELECT_INPUT("INPUT_SELECT");
+    POWER_OFF("KEY_POWEROFF"),
+    SELECT_INPUT("KEY_");
 
     fun send(params: String? = null, onComplete: ((Boolean) -> Unit)) {
         val TAG = this::class.java.simpleName
