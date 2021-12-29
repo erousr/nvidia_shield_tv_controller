@@ -54,8 +54,8 @@ enum class TvCommand(private val commandValue: String) {
             }
 
             val reader = BufferedReader(InputStreamReader(client.bufferedInputStream, StandardCharsets.UTF_8))
-
-            client.sendCommand("$commandValue ${params ?: ""}")
+            
+            client.sendCommand("${commandValue}${params ?: ""}")
 
             val response = reader.readLine()
             Log.d(TAG, "Server response: $response")
