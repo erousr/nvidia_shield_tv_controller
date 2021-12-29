@@ -5,6 +5,12 @@ I currently don't have a Samsung TV, so can't test this, but I did find several 
 A useful project that might help on knowing what to send:
 https://github.com/Ape/samsungctl
 
+To work with newer Samsung TVs, a token authorization would have to be implemented. Here is a working project with tokens for Samsung:
+https://github.com/xchwarze/samsung-tv-ws-api/blob/master/README.md
+
+Here is a thred explaining the token issue and solution more in detail:
+https://github.com/Ape/samsungctl/issues/114#issuecomment-529202420
+
 And another one that has some ultra simple raw python code. This one looks like it's specifically meant for the indigo client, but I would bet that the keycodes are valid and can be used with the above project:
 
 Source: 
