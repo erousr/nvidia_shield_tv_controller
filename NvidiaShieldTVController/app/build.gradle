@@ -37,7 +37,7 @@ android {
                     appPrefix: "shield",
                     launcherName: "Shield TV Control",
             ]
-            buildConfigField "String", "SELECT_INPUT_PARAMS", "\"hdmi4\""
+            buildConfigField "String", "SELECT_INPUT_PARAMS", "\"HDMI4\""
             buildConfigField "boolean", "IS_SHIELD", "true"
         }
         playstation {
@@ -70,7 +70,7 @@ android {
                     appPrefix: "xbox",
                     launcherName: "Xbox One",
             ]
-            buildConfigField "String", "SELECT_INPUT_PARAMS", "\"hdmi2\""
+            buildConfigField "String", "SELECT_INPUT_PARAMS", "\"HDMI2\""
             buildConfigField "boolean", "IS_SHIELD", "false"
         }
     }
